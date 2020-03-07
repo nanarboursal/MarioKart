@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,202 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MarioKart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3Rm-tB-TS4">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8OK-S2-OQH" appends="YES" id="3Wu-cD-Di6"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_0" translatesAutoresizingMaskIntoConstraints="NO" id="oez-od-SeH">
+                                <rect key="frame" x="0.0" y="132" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ceA-a8-WQ5" appends="YES" id="FD1-wd-gxH"/>
+                                    <outletCollection property="gestureRecognizers" destination="zoe-9g-4pH" appends="YES" id="i97-u2-k0W"/>
+                                    <outletCollection property="gestureRecognizers" destination="Jqv-QU-tzh" appends="YES" id="FRB-c6-CBO"/>
+                                    <outletCollection property="gestureRecognizers" destination="Xba-Zt-ovZ" appends="YES" id="3jQ-A8-wCt"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="Z9y-lx-zm8">
+                                <rect key="frame" x="182" y="253" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="U4z-B1-W9d" appends="YES" id="igx-B9-Aee"/>
+                                    <outletCollection property="gestureRecognizers" destination="MgH-XU-SVW" appends="YES" id="S3z-7K-SFz"/>
+                                    <outletCollection property="gestureRecognizers" destination="eY9-kY-E8d" appends="YES" id="2kB-re-7x1"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZSQ-XF-uNM" appends="YES" id="XA4-QP-O8i"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="GNM-Z4-QNT">
+                                <rect key="frame" x="14" y="266" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tB8-bK-954" appends="YES" id="6mu-uN-d9z"/>
+                                    <outletCollection property="gestureRecognizers" destination="jPD-tL-4Om" appends="YES" id="bEr-3j-peg"/>
+                                    <outletCollection property="gestureRecognizers" destination="Otu-En-AP9" appends="YES" id="axK-eF-YuZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="H9L-3r-Ix5" appends="YES" id="q7S-jl-bOr"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_3" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-RP-dGa">
+                                <rect key="frame" x="168" y="447" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="e7Y-oQ-HFA" appends="YES" id="bnK-tR-TZM"/>
+                                    <outletCollection property="gestureRecognizers" destination="y06-fA-JrO" appends="YES" id="YSy-d6-lqN"/>
+                                    <outletCollection property="gestureRecognizers" destination="Qxj-W4-eDS" appends="YES" id="zJh-Z4-ffn"/>
+                                    <outletCollection property="gestureRecognizers" destination="XzJ-3M-VPo" appends="YES" id="bxl-JG-oFd"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_4" translatesAutoresizingMaskIntoConstraints="NO" id="aJk-np-dpe">
+                                <rect key="frame" x="194" y="132" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mdn-rT-W6q" appends="YES" id="sli-sn-BxJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="xXZ-XM-JKw" appends="YES" id="PHd-wT-all"/>
+                                    <outletCollection property="gestureRecognizers" destination="rPh-zo-7IW" appends="YES" id="MFq-sL-BHc"/>
+                                    <outletCollection property="gestureRecognizers" destination="g7m-PW-7Tc" appends="YES" id="NW7-Pg-rGE"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="kartView0" destination="oez-od-SeH" id="hXh-Kq-IlU"/>
+                        <outlet property="kartView1" destination="Z9y-lx-zm8" id="zgL-bH-9d5"/>
+                        <outlet property="kartView2" destination="GNM-Z4-QNT" id="J5O-PC-bN6"/>
+                        <outlet property="kartView3" destination="9bs-RP-dGa" id="sce-yu-feA"/>
+                        <outlet property="kartView4" destination="aJk-np-dpe" id="zo5-EO-hUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ceA-a8-WQ5">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="nQZ-aN-5Fb"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Mdn-rT-W6q">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="Mzx-jU-iD2"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="tB8-bK-954">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="7Ex-bw-iRq"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="U4z-B1-W9d">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="5qE-0H-JsB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="e7Y-oQ-HFA">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="C3I-9O-bIp"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="zoe-9g-4pH">
+                    <connections>
+                        <action selector="didPinchCart:" destination="BYZ-38-t0r" id="S2y-eg-DS0"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="xXZ-XM-JKw">
+                    <connections>
+                        <action selector="didPinchCart:" destination="BYZ-38-t0r" id="0rW-kc-fEt"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="jPD-tL-4Om">
+                    <connections>
+                        <action selector="didPinchCart:" destination="BYZ-38-t0r" id="P2o-xD-vOL"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="MgH-XU-SVW">
+                    <connections>
+                        <action selector="didPinchCart:" destination="BYZ-38-t0r" id="YVL-RW-aNd"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="y06-fA-JrO">
+                    <connections>
+                        <action selector="didPinchCart:" destination="BYZ-38-t0r" id="Kyb-aq-f1y"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Jqv-QU-tzh">
+                    <connections>
+                        <action selector="didRotateKart:" destination="BYZ-38-t0r" id="zi8-ma-z8p"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="rPh-zo-7IW">
+                    <connections>
+                        <action selector="didRotateKart:" destination="BYZ-38-t0r" id="XOv-EV-efn"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="Otu-En-AP9">
+                    <connections>
+                        <action selector="didRotateKart:" destination="BYZ-38-t0r" id="NVD-XW-LbR"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="eY9-kY-E8d">
+                    <connections>
+                        <action selector="didRotateKart:" destination="BYZ-38-t0r" id="U0O-Ua-EN9"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="Qxj-W4-eDS">
+                    <connections>
+                        <action selector="didRotateKart:" destination="BYZ-38-t0r" id="pL9-Dz-Wy5"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Xba-Zt-ovZ">
+                    <connections>
+                        <action selector="didTapKart:" destination="BYZ-38-t0r" id="qnH-Lh-WcO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="g7m-PW-7Tc">
+                    <connections>
+                        <action selector="didTapKart:" destination="BYZ-38-t0r" id="C0B-iG-tgl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="H9L-3r-Ix5">
+                    <connections>
+                        <action selector="didTapKart:" destination="BYZ-38-t0r" id="jXe-aO-5JO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="ZSQ-XF-uNM">
+                    <connections>
+                        <action selector="didTapKart:" destination="BYZ-38-t0r" id="DdV-Bz-UOi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="XzJ-3M-VPo">
+                    <connections>
+                        <action selector="didTapKart:" destination="BYZ-38-t0r" id="zJd-Ib-2ns"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="8OK-S2-OQH">
+                    <connections>
+                        <action selector="didLongPressBackground:" destination="BYZ-38-t0r" id="aTi-Hz-Ful"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="320" height="568"/>
+        <image name="kart_0" width="340" height="340"/>
+        <image name="kart_1" width="340" height="340"/>
+        <image name="kart_2" width="340" height="340"/>
+        <image name="kart_3" width="340" height="340"/>
+        <image name="kart_4" width="340" height="340"/>
+    </resources>
 </document>
